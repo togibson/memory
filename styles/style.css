@@ -1,0 +1,11 @@
+canvas {
+    border: 2px inset black;
+    height: 512px;
+    width: 512px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
