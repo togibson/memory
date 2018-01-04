@@ -6,10 +6,17 @@ let images = [];
 
 images.push(new Image());
 images[images.length - 1].src = "images/Skull.png";
-
-c.fillStyle = "green";
-c.fillRect(5, 5, 40 , 40);
+images.push(new Image());
+images[images.length - 1].src = "images/House 1.png";
+images.push(new Image());
+images[images.length - 1].src = "images/House 2.png";
+images.push(new Image());
+images[images.length - 1].src = "images/House 3.png";
 
 images[0].onload = function() {
-    c.drawImage(images[0], 50, 50, 40, 40);
+    c.drawImage(images[0], 5, 5, 40, 40);
+}
+
+images[1].onload = function() {
+    c.drawImage(images[1], 55, 5, 40, 40);
 }
