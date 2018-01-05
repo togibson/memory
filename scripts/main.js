@@ -13,8 +13,12 @@ images[images.length - 1].src = "images/House 2.png";
 images.push(new Image());
 images[images.length - 1].src = "images/House 3.png";
 
+
+
 images[0].onload = function() {
-    c.drawImage(images[0], 5, 5, 40, 40);
+    for (i = 0; i < images.length; i++) {
+        c.drawImage(images[0], i + 5 + 50*i, 5, 40, 40);
+    }
 }
 
 images[1].onload = function() {
