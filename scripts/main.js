@@ -17,6 +17,9 @@ images[0].onload = function() {
     c.drawImage(images[0], 5, 200, 40, 40);
 }
 
-images[1].onload = function() {
+images[1].onload = mainfunction;
+
+function mainfunction () {
+    console.log("hello world");
     c.drawImage(images[1], 55, 5, 40, 40);
 }
